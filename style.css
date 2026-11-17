@@ -850,3 +850,4 @@ main.story{ padding:64px 0 96px; }
 .story-duo{ display:grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap:56px; align-items:center; margin-top:72px; }
 .story-duo .story-photo{ position:static; }
 @media (max-width:860px){ .story-duo{ grid-template-columns:1fr; gap:28px; margin-top:48px; } .story-duo .story-photo{ order:0; } }
+.found-box .trhy a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}.found-box .trhy a:hover{text-decoration-thickness:2px}
