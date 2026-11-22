@@ -851,3 +851,14 @@ main.story{ padding:64px 0 96px; }
 .story-duo .story-photo{ position:static; }
 @media (max-width:860px){ .story-duo{ grid-template-columns:1fr; gap:28px; margin-top:48px; } .story-duo .story-photo{ order:0; } }
 .found-box .trhy a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}.found-box .trhy a:hover{text-decoration-thickness:2px}
+
+/* Pruh s trhy pod bannerem */
+.trhy-strip{ background: var(--lavender-deep); color:#fff; padding:14px 0; }
+.trhy-strip .wrap{ display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px 28px; }
+.trhy-strip .ts-label{ font-family:'Fraunces',serif; font-size:19px; font-weight:600; }
+.trhy-strip .ts-list{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 26px; }
+.trhy-strip .ts-list li{ font-size:16px; line-height:1.35; }
+.trhy-strip a{ color:inherit; text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px; }
+.trhy-strip a:hover{ text-decoration-thickness:2px; }
+.trhy-strip .ts-more{ font-size:14px; opacity:.85; }
+@media (max-width:700px){ .trhy-strip{ padding:14px 0; } .trhy-strip .wrap{ flex-direction:column; align-items:flex-start; gap:6px; } .trhy-strip .ts-list{ flex-direction:column; gap:4px; } }
