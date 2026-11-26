@@ -49,18 +49,18 @@ const KL = {
     "intro": "Truhlíky s domečky a zápichy do květináčů a záhonů. Oživí zahradu, terasu i balkon."
   },
   {
-    "name": "Svícny a dekorace",
-    "slug": "svicny-a-dekorace",
+    "name": "Svícny",
+    "slug": "svicny",
     "g": "g5",
-    "short": "Svícny, ozdoby a dekorace na každé roční období.",
-    "intro": "Svícny, ozdoby a dekorace, které přinesou do domova atmosféru právě probíhajícího období."
+    "short": "Svícny a lucerny, které rozsvítí domov.",
+    "intro": "Svícny a lucerny, které rozsvítí domov a navodí atmosféru právě probíhajícího období."
   },
   {
-    "name": "Drobnosti pro radost",
-    "slug": "drobnosti-pro-radost",
+    "name": "Dekorace pro radost",
+    "slug": "dekorace-pro-radost",
     "g": "g6",
-    "short": "Dřevěná srdce, levandulové pytlíčky a malé dárky.",
-    "intro": "Drobné dárky, které udělají radost: srdce ze dřeva, levandulové pytlíčky a další maličkosti."
+    "short": "Ozdoby, dřevěná srdce, levandulové pytlíčky a další dekorace.",
+    "intro": "Dekorace, které udělají radost: ozdoby, srdce ze dřeva, levandulové pytlíčky, slepice a další maličkosti."
   },
   {
     "name": "Vánoční nabídka",
@@ -504,7 +504,8 @@ function initHome() {
 /* ---------------------------------------------------- Stránka kategorie */
 function initCategory() {
   const head = $('#catHead'); if (!head || document.body.dataset.page !== 'category') return;
-  const slug = new URLSearchParams(location.search).get('k');
+  const OLD_SLUGS = { 'svicny-a-dekorace': 'svicny', 'drobnosti-pro-radost': 'dekorace-pro-radost' };
+  let slug = new URLSearchParams(location.search).get('k'); if (OLD_SLUGS[slug]) slug = OLD_SLUGS[slug];
   const cat = slug === 'vse' ? { name: 'Kompletní nabídka', slug: 'vse', intro: 'Všechno z mé dílny na jednom místě. Vyberte si podle období nebo stylu – třeba Vánoce, Provence nebo Vhodné jako dárek.' } : KL.CATS.find(c => c.slug === slug);
   const grid = $('#pGrid'), filt = $('#pFilters'), count = $('#pCount');
 
