@@ -52,14 +52,14 @@ const KL = {
     "name": "Svícny",
     "slug": "svicny",
     "g": "g5",
-    "short": "Svícny a lucerny, které rozsvítí domov.",
+    "short": "Svícny – malé i větší, na každé roční období.",
     "intro": "Svícny a lucerny, které rozsvítí domov a navodí atmosféru právě probíhajícího období."
   },
   {
     "name": "Dekorace pro radost",
     "slug": "dekorace-pro-radost",
     "g": "g6",
-    "short": "Ozdoby, dřevěná srdce, levandulové pytlíčky a další dekorace.",
+    "short": "Dřevěná srdce, levandulové pytlíčky a malé dárky.",
     "intro": "Dekorace, které udělají radost: ozdoby, srdce ze dřeva, levandulové pytlíčky, slepice a další maličkosti."
   },
   {
